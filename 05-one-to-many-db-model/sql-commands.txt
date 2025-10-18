@@ -1,0 +1,39 @@
+from tracks.models import Artist, Genre, Track, Album
+
+zep = Artist(name='Zed Zeplin')
+zep.save()
+Alaji = Artist(name='Young Alaji')
+Alaji.save()
+badman = Artist(name='Badman Binladin')
+badman.save()
+made = Album(title='Who made', artist=badman)
+made.save()
+do = Album(title='Do Good Always', artist=Alaji)
+do.save()
+ade = Album(title='Bro', artist=Alaji)
+ade.save()
+Album.objects.values()
+
+ROCK = Genre(name='Rock')
+ROCK.save()
+
+met = Genre(name='Metal')
+met.save()
+Genre.objects.values()
+
+
+x = Track(title='Black Dog', rating=5, length=297, count=9, album=made, genre=ROCK)
+x.save()
+
+y = Track(title='White cat', rating=5, length=297, count=9, album=ade, genre=met)
+y.save()
+
+Track.objects.values()
+
+first = Track.objects.get(pk=1)
+print(first)
+first
+print(first.length)
+print(first.album.artist.name)
+
+
