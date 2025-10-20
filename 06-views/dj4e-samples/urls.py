@@ -30,7 +30,8 @@ urlpatterns = [
     # Sample applications
 #    path('hello/', include('hello.urls')),
 #    path('users/', include('users.urls')),
-    path('tracks/', include('tracks.urls')),
+########    path('tracks/', include('tracks.urls')),
+    path('views/', include('views.urls')),
 ]
 
 # Serve the static HTML
