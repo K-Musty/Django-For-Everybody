@@ -20,7 +20,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    'tmpl',  # Your tmpl app
+    'route',
+    'gview',
 ]
 
 MIDDLEWARE = [
