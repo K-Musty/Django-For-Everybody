@@ -6,9 +6,11 @@ from form.forms import BasicForm, CatForm
 from form.models import Cat
 import html
 
-def example(request) :
+
+def example(request):
     form = BasicForm()
     return HttpResponse(form.as_table())
+
 
 # Call as dumpdata('GET', request.GET)
 def dumpdata(place, data) :

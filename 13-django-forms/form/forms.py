@@ -1,12 +1,13 @@
-from django import forms
+from django.forms import Form, DateField, CharField, IntegerField
 from django.core.exceptions import ValidationError
 from django.core import validators
 
-class BasicForm(forms.Form):
-    title = forms.CharField(validators=[
-        validators.MinLengthValidator(2, "Please enter 2 or more characters")])
-    mileage = forms.IntegerField()
-    purchase_date = forms.DateField()
+class BasicForm(Form):
+    title = CharField(validators = [ validators.MinLengthValidator(2, "Please Enter two or more characters")])
+    millage = IntegerField()
+    purchase_date = DateField()
+
+
 
 from django.forms import ModelForm
 from form.models import Cat
