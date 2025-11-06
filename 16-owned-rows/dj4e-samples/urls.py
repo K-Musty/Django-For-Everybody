@@ -35,7 +35,7 @@ urlpatterns = [
 #    path('tmpl/', include('tmpl.urls')),
 #    path('route/', include('route.urls', namespace='nsroute')),
 #    path('gview/', include('gview.urls')),
-    path('autos/', include('autos.urls')),
+    path('myarts/', include('myarts.urls')),
 ]
 
 # Serve the static HTML
