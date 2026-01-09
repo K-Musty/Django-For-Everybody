@@ -20,8 +20,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+    'crispy_forms',
+    'crispy_bootstrap5',
     
-    'myarts'
+    'myarts',
 ]
 
 MIDDLEWARE = [
@@ -93,4 +95,6 @@ REST_FRAMEWORK = {
     )
 }
 
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
