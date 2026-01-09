@@ -57,6 +57,8 @@ class OwnerDeleteView(LoginRequiredMixin, DeleteView):
 
 
 
+
+
 # References
 
 # https://docs.djangoproject.com/en/4.2/ref/class-based-views/mixins-editing/#django.views.generic.edit.ModelFormMixin.form_valid
