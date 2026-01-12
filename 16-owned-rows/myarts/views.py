@@ -14,7 +14,7 @@ class ArticleDetailView(OwnerDetailView):
 class ArticleCreateView(OwnerCreateView):
     model = Article
     # List the fields to copy from the Article model to the Article form
-    fields = ['title', 'text']
+    fields = ['title', 'text'] # 'owner']
 
 class ArticleUpdateView(OwnerUpdateView):
     model = Article
